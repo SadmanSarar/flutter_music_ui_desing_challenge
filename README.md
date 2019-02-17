@@ -9,7 +9,7 @@ The aim of the project is to design and build the ui shown [here](https://www.up
 
 The screen shot from the app
 
-![]()
+![](docs/flutter_01.png)
 
 TO DO:
 - Add theme valiables
