@@ -2,6 +2,8 @@
 
 A new Flutter Project for recreating UI shown in [here](https://www.uplabs.com/posts/music-interface-ui-design).
 
+#### Download the demo apk from [here](docs/music-design-demo.apk)
+
 ## Aim
 The aim of the project is to design and build the ui shown [here](https://www.uplabs.com/posts/music-interface-ui-design).
 
@@ -13,4 +15,3 @@ The screen shot from the app
 
 TO DO:
 - Add theme valiables
-- Add background images
