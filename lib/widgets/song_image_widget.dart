@@ -46,10 +46,13 @@ class _SongImageWidgetState extends State<SongImageWidget>
           child: ClipOval(
             child: Container(
               alignment: Alignment.center,
-              color: Colors.blue,
+              color: Colors.white,
               height: 140.0,
               width: 140.0,
-              child: Image.network("https://picsum.photos/400"),
+              child: FadeInImage.assetNetwork(
+                image: "https://picsum.photos/400",
+                placeholder: "assets/images/placeholder.png",
+              ),
             ),
           ),
         ),

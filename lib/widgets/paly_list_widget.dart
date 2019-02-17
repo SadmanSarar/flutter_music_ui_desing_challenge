@@ -15,8 +15,9 @@ class PlayListWidget extends StatelessWidget {
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.all(8),
-                  child: Image.network(
-                    "https://picsum.photos/400",
+                  child: FadeInImage.assetNetwork(
+                    placeholder: 'assets/images/placeholder.png',
+                    image: "https://picsum.photos/400",
                     height: 32,
                     width: 32,
                   ),
