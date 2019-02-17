@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_ui_desing/widgets/backgrounAnimatedContainer.dart';
 import 'package:music_ui_desing/widgets/control_buttons_widget.dart';
 import 'package:music_ui_desing/widgets/paly_list_widget.dart';
 import 'package:music_ui_desing/widgets/play_list_pages.dart';
@@ -42,29 +43,38 @@ class MyHomePage extends StatelessWidget {
           ),
         ),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        mainAxisAlignment: MainAxisAlignment.start,
+      body: Stack(
         children: <Widget>[
-          SizedBox.fromSize(
-            size: Size.fromHeight(16.0),
+          backgrounAnimatedContainer(),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              SizedBox.fromSize(
+                size: Size.fromHeight(16.0),
+              ),
+              buildSongImageWidget(),
+              Padding(
+                padding: EdgeInsets.only(top: 16.0),
+              ),
+              buildSongTitleWidget(),
+              SizedBox.fromSize(
+                size: Size.fromHeight(16.0),
+              ),
+              buildControlButtonsWidget(),
+              SizedBox.fromSize(
+                size: Size.fromHeight(16.0),
+              ),
+              buildPlayListPages(),
+            ],
           ),
-          buildSongImageWidget(),
-          Padding(
-            padding: EdgeInsets.only(top: 16.0),
-          ),
-          buildSongTitleWidget(),
-          SizedBox.fromSize(
-            size: Size.fromHeight(16.0),
-          ),
-          buildControlButtonsWidget(),
-          SizedBox.fromSize(
-            size: Size.fromHeight(16.0),
-          ),
-          buildPlayListPages(),
         ],
       ),
     );
+  }
+
+  Widget backgrounAnimatedContainer() {
+    return BackgroundAnimatedContainer();
   }
 
   Expanded buildPlayListPages() {
