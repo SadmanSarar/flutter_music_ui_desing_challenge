@@ -83,16 +83,15 @@ class _SongImageWidgetState extends State<SongImageWidget>
           animation: _controller,
           builder: (context, widget) {
             return SizedBox.fromSize(
-              size: Size(170, 170),
+              size: Size(10, 10),
               child: Transform.translate(
                 offset: Offset(
-                  85 * cos(2 * pi * _controller.value - pi/2),
-                  85 * sin(2 * pi * _controller.value - pi/2),
+                  85 * cos(2 * pi * _controller.value - pi / 2),
+                  85 * sin(2 * pi * _controller.value - pi / 2),
                 ),
-                child: SizedBox.fromSize(
-                  size: Size.square(4),
-                  child: Icon(
-                    Icons.radio_button_unchecked,
+                child: Container(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
                     color: Colors.white,
                   ),
                 ),
