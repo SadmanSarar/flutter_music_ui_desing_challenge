@@ -41,7 +41,10 @@ class ControlButtonWidget extends StatelessWidget {
                   clipper: LeftControlButtonClipper(),
                   child: FlatButton(
                     onPressed: () {},
-                    child: Icon(Icons.fast_rewind),
+                    child: Icon(
+                      Icons.fast_rewind,
+                      color: AppColor.primaryColor,
+                    ),
                   ),
                 ),
               ),
@@ -71,7 +74,10 @@ class ControlButtonWidget extends StatelessWidget {
                   clipper: RightControlButtonClipper(),
                   child: FlatButton(
                     onPressed: () {},
-                    child: Icon(Icons.fast_forward),
+                    child: Icon(
+                      Icons.fast_forward,
+                      color: AppColor.primaryColor,
+                    ),
                   ),
                 ),
               )
